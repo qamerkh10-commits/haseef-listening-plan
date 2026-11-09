@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الدورة · حصيف</title>
+<meta name="description" content="صفحة دورة من خطة حصيف.">
+<meta name="theme-color" content="#F0E6D2">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+/* اتجاه الانتقال بين الصفحات: للأمام أو للخلف حسب ترتيب القائمة */
+(function(){var O=["index","calendar","courses","course","podcasts","books"];
+function ix(u){try{var p=new URL(u).pathname.split("/").pop().replace(".html","")||"index";return O.indexOf(p)}catch(e){return -1}}
+addEventListener("pagereveal",function(e){if(!e.viewTransition||!window.navigation||!navigation.activation)return;
+var f=navigation.activation.from,t=navigation.activation.entry;if(!f||!t)return;
+var a=ix(f.url),b=ix(t.url);e.viewTransition.types.add(navigation.activation.navigationType==="traverse"&&a>b||a>b?"back":"fwd")});})();
+</script>
+</head><body data-page="course">
+<header class="site"><div class="hin"><a class="logo" href="index.html">حصيف<small>نحو وعيٍ أوسع</small></a>
+<nav class="nav" aria-label="أقسام الموقع"><a href="index.html"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10"/><path d="M10 20v-5.5h4V20"/></svg><span>الرئيسية</span></a><a href="calendar.html"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>التقويم</span></a><a href="courses.html" aria-current="page"><i class="pill"></i><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2"/></svg><span>الدورات</span></a><a href="podcasts.html"><svg viewBox="0 0 24 24"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4.5" height="7" rx="2"/><rect x="16.5" y="14" width="4.5" height="7" rx="2"/></svg><span>البودكاست</span></a><a href="books.html"><svg viewBox="0 0 24 24"><path d="M12 6.5C10 5 7 4.5 3.5 5v14c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5zM12 6.5V20"/></svg><span>الكتب</span></a></nav><span class="hp" id="hp"></span></div></header>
+<main class="w" id="main">
+<div id="course"></div>
+<p class="foot">التقدّم يُحفظ في هذا المتصفح فقط.</p>
+</main>
+<svg class="wave" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20C100 0 200 0 300 20S500 40 600 20 800 0 900 20 1100 40 1200 20" fill="none" stroke="#E4693A" stroke-width="4"/><path d="M0 20C100 40 200 40 300 20S500 0 600 20 800 40 900 20 1100 0 1200 20" fill="none" stroke="#E3A33E" stroke-width="4"/></svg>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body></html>
